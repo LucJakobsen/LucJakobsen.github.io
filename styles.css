@@ -14,6 +14,7 @@ body {
 
 /* Container Styles */
 .container {
+    position: relative; /* Ensures absolute positioning works within this container */
     background: linear-gradient(120deg, #3a3a52, #1a1a2e);
     color: #dad7af; /* Text inside the container should be readable */
     max-width: 1000px; /* Sets the maximum width of the container */
@@ -21,6 +22,14 @@ body {
     padding: 20px; /* Adds inner spacing */
     border-radius: 10px; /* Slightly rounds the corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+}
+
+.corner-image {
+    position: absolute; /* Positions the image relative to the container */
+    top: 0px; /* Adjusts distance from the top */
+    right: -40px; /* Adjusts distance from the right */
+    width: 450px; /* Adjusts the size of the image */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* Header Styles */
@@ -40,7 +49,18 @@ header h2 {
     line-height: 1.2; /* Adjust for better spacing */
     margin-top: 100px; /* Move down */
     margin-left: 30px; /* Move right */
+    margin-bottom: -20px;
     color: #cccccc; /* Soft contrast color */
+}
+
+header h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700; /* Make the font bold for emphasis */
+    font-size: 2rem; /* Adjust size as needed */
+    line-height: 1.2; /* Adjust for better spacing */
+    margin-top: 100px;
+    text-align: center;
+    color: #dad7af; /* Soft contrast color */
 }
 
 /* Main Text Styles */
@@ -128,4 +148,34 @@ main p {
 
 .cv-button button:hover {
     background-color: #176f68; /* Darker shade on hover */
+}
+
+/* Projects Container */
+.projects-container {
+    margin: 40px 30px; /* Adds spacing around the container */
+    padding: 20px; /* Adds inner spacing */
+    background-color: #1f1f2e; /* Slightly darker background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Individual Project Styles */
+.project {
+    margin-bottom: 20px; /* Space between projects */
+}
+
+.project h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: #dad7af; /* Matches theme */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.project p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem; /* Adjust text size for readability */
+    margin-left: 0px; /* Matches the left margin of the header */
+    margin-top: 0px;
+    color: #cccccc; /* Matches theme */
+    line-height: 1.2; /* Improve spacing between lines */
 }
