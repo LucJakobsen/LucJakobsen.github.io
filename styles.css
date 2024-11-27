@@ -27,8 +27,8 @@ body {
 .corner-image {
     position: absolute; /* Positions the image relative to the container */
     top: 0px; /* Adjusts distance from the top */
-    right: -40px; /* Adjusts distance from the right */
-    width: 450px; /* Adjusts the size of the image */
+    right: 0px; /* Adjusts distance from the right */
+    width: 480px; /* Adjusts the size of the image */
     height: auto; /* Maintains aspect ratio */
 }
 
@@ -47,7 +47,7 @@ header h2 {
     font-family: "Roboto", sans-serif; /* Soft sans-serif for readability */;
     font-size: 1.5rem; /* Adjust size as needed */
     line-height: 1.2; /* Adjust for better spacing */
-    margin-top: 100px; /* Move down */
+    margin-top: 50px; /* Move down */
     margin-left: 30px; /* Move right */
     margin-bottom: -20px;
     color: #cccccc; /* Soft contrast color */
@@ -58,7 +58,7 @@ header h3 {
     font-weight: 700; /* Make the font bold for emphasis */
     font-size: 2rem; /* Adjust size as needed */
     line-height: 1.2; /* Adjust for better spacing */
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     color: #dad7af; /* Soft contrast color */
 }
@@ -133,7 +133,7 @@ main p {
 }
 
 .cv-button button {
-    background-color: #1f8f88; /* Button background color */
+    background-color: #0097b2; /* Button background color */
     color: white; /* Text color */
     font-family: "Roboto", sans-serif; /* Soft sans-serif for readability */
     font-weight: 450; /* Make the font bold for emphasis */
@@ -147,35 +147,104 @@ main p {
 }
 
 .cv-button button:hover {
-    background-color: #176f68; /* Darker shade on hover */
+    background-color: #1f718f; /* Darker shade on hover */
 }
 
 /* Projects Container */
 .projects-container {
-    margin: 40px 30px; /* Adds spacing around the container */
-    padding: 20px; /* Adds inner spacing */
+    margin: 40px 30px; /* Keep outer spacing consistent */
+    padding: 20px 15px; /* Reduce horizontal padding inside the container */
     background-color: #1f1f2e; /* Slightly darker background for contrast */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-/* Individual Project Styles */
+/* Project Header */
+.project h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem; /* Adjusted size to ensure consistency */
+    font-weight: 700; /* Bold header */
+    color: #dad7af; /* Matches theme */
+    margin-bottom: 0px; /* Space below the title */
+    margin-left: 5px;
+}
+
+/* Project Content */
+.project-content {
+    display: flex; /* Aligns text and video horizontally */
+    justify-content: space-between; /* Space between the text and video */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 0px; /* Adds spacing between text and video */
+}
+
+/* Project Styles */
 .project {
     margin-bottom: 20px; /* Space between projects */
 }
 
-.project h4 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 1.5rem; /* Adjust size as needed */
-    color: #dad7af; /* Matches theme */
-    margin-bottom: 10px; /* Space below the title */
-}
-
 .project p {
     font-family: "Roboto", sans-serif;
-    font-size: 1rem; /* Adjust text size for readability */
-    margin-left: 0px; /* Matches the left margin of the header */
-    margin-top: 0px;
+    font-size: 1.1rem; /* Adjust text size for readability */
     color: #cccccc; /* Matches theme */
-    line-height: 1.2; /* Improve spacing between lines */
+    line-height: 1.5; /* Improve spacing between lines */
+    margin-left: 5px;
+}
+
+/* Gamification Video */
+.gamification-video {
+    max-width: 50%; /* Restricts width of the video block */
+    margin-top: 60px;
+}
+
+.gamification-video video {
+    width: 100%; /* Ensures the video fits within its container */
+    border-radius: 10px; /* Adds rounded corners to the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+/* Game Systems Video */
+.gamesystems-video {
+    max-width: 50%; /* Restricts width of the video block */
+    margin-top: 160px;
+}
+
+.gamesystems-video video {
+    width: 100%; /* Ensures the video fits within its container */
+    border-radius: 10px; /* Adds rounded corners to the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    margin-bottom: 230px;
+}
+
+/* Project Images */
+.analytics-image {
+    max-width: 100%; /* Restricts width of the video block */
+    margin-top: 50px;
+}
+
+.analytics-image img {
+    width: 320px; 
+    border-radius: 10px; /* Adds rounded corners to the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+.smartlight-image {
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+.smartlight-image img {
+    width: 200px; /* Ensures the video fits within its container */
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+.gamesystem-image {
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+.gamesystem-image img {
+    width: 200px; /* Ensures the video fits within its container */
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
