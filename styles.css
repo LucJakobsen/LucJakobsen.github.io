@@ -47,7 +47,7 @@ header h2 {
     font-family: "Roboto", sans-serif; /* Soft sans-serif for readability */;
     font-size: 1.5rem; /* Adjust size as needed */
     line-height: 1.2; /* Adjust for better spacing */
-    margin-top: 50px; /* Move down */
+    margin-top: 30px; /* Move down */
     margin-left: 30px; /* Move right */
     margin-bottom: -20px;
     color: #cccccc; /* Soft contrast color */
@@ -58,7 +58,8 @@ header h3 {
     font-weight: 700; /* Make the font bold for emphasis */
     font-size: 2rem; /* Adjust size as needed */
     line-height: 1.2; /* Adjust for better spacing */
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: -30px;
     text-align: center;
     color: #dad7af; /* Soft contrast color */
 }
@@ -78,12 +79,12 @@ main p {
 .profile-picture {
     display: flex; /* Centers the image */
     justify-content: left;
-    margin: -20px 5px; /* Adds space above and below the image */
+    margin: 0px 0px; /* Adds space above and below the image */
 }
 
 .profile-picture img {
-    width: 45px; /* Adjust the size of the profile picture */
-    height: 45px; /* Keeps the image square */
+    width: 120px; /* Adjust the size of the profile picture */
+    height: 120px; /* Keeps the image square */
     border-radius: 50%; /* Makes the image circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
     object-fit: cover; /* Ensures the image fills the circle properly */
