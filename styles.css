@@ -83,11 +83,14 @@ main p {
 }
 
 .profile-picture img {
-    width: 120px; /* Adjust the size of the profile picture */
-    height: 120px; /* Keeps the image square */
+    width: 160px; /* Adjust the size of the profile picture */
+    height: 160px; /* Keeps the image square */
     border-radius: 50%; /* Makes the image circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
     object-fit: cover; /* Ensures the image fills the circle properly */
+
+    image-rendering: -webkit-optimize-contrast; /* For Chrome/Safari */
+    image-rendering: high-quality; /* For other browsers */
 }
 
 /* Profile Section Styles */
@@ -105,8 +108,8 @@ main p {
 }
 
 .social-link img {
-    width: 20px; /* Set size for the logos */
-    height: 20px; /* Keep it square */
+    width: 30px; /* Set size for the logos */
+    height: 30px; /* Keep it square */
     margin-right: 5px; /* Space between logo and text */
 }
 
